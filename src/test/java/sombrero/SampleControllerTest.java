@@ -24,7 +24,7 @@ public class SampleControllerTest {
         mockMvc.perform(get("/hello"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("hello"))
-                .andExpect(model().attribute("name"), is("sombrero")));
+                .andExpect(model().attribute("name", is("sombrero")));
 
     }
 
